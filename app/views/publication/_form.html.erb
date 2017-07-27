@@ -1,0 +1,26 @@
+<%=form_for @publication ,url: {action: "create"} do |f|%>
+  <div class="form-group">
+    <%= f.label :name , "Titulo de la foto" %>
+    <%= f.text_field :name, placeholder: "Título de la foto", class:"form-control"%>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :description , "Descripción" %>
+    <%= f.text_field :description, placeholder: "Descripción de la foto", class:"form-control"%>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :place , "Ubicacón" %>
+    <%= f.text_field :place, placeholder: "Ubicacion de la foto", class:"form-control"%>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :permission_pub , "Privacidad" %>
+    <%= f.text_field :permission_pub, placeholder: "Privacidad de la foto", class:"form-control"%>
+  </div>
+
+  <div class="form-group">
+    <%=f.submit "Publicar", class:"btn"%>
+  </div>
+
+<%end%>
