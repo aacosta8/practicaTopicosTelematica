@@ -21,7 +21,7 @@ class PublicationController < ApplicationController
 
   def index
 
-    @aviso = "Proximamente lista de las fotos"
+    @publications = Publication.all
 
   end
 

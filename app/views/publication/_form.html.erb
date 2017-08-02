@@ -16,7 +16,11 @@
 
   <div class="form-group">
     <%= f.label :permission_pub , "Privacidad" %>
-    <%= f.text_field :permission_pub, placeholder: "Privacidad de la foto", class:"form-control"%>
+    <select name="publication[permission_pub]" id="publication_permission_pub">
+      <option value="compartido">compartido</option>
+      <option value="publico">publico</option>
+      <option value="privado">privado</option>
+    </select>
   </div>
 
   <div class="form-group">

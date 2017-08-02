@@ -1,1 +1,16 @@
-<%=@aviso%>
+<div style="width:50%; margin:0 auto;">
+
+  <%@publications.each do |p|%>
+    <div class="w3-container w3-red">
+      <h1><%=p.name%></h1>
+    </div>
+
+    <img src="http://saveabandonedbabies.org/wp-content/uploads/2015/08/default.png" alt="Car" style="width:100%">
+
+    <div class="w3-container w3-black">
+      <h5>Tomada en: <%=p.place%></h5>
+      <p>Descripcion: <%=p.description%></p>
+    </div>
+    <br>
+  <%end%>
+</div>

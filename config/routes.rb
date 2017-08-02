@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
+  root 'publication#index'
   resources :publication
 
 # resources genera
