@@ -5,7 +5,11 @@ class PublicationsController < ApplicationController
   # GET /publications
   # GET /publications.json
   def index
-    @publications = Publication.recientes.publicos
+    if user_signed_in? then
+      @publications = Publication.recientes.compartidos
+    else
+      @publications = Publication.recientes.publicos
+    end
   end
 
   # GET /publications/1
