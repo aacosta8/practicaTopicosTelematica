@@ -1,0 +1,27 @@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+<div style="width:50%; margin:0 auto;">
+
+  <%@publications.each do |p|%>
+    <div class="w3-container w3-red">
+      <h4><%=p.name%></h4>
+      <%= link_to 'Edit', edit_publication_path(p), class:"be-white"%></td>
+      <%= link_to 'Destroy', p, method: :delete, data: { confirm: 'Are you sure?' }, class:"be-white" %></td>
+    </div>
+
+    <img src="http://saveabandonedbabies.org/wp-content/uploads/2015/08/default.png" alt="Car" style="width:100%">
+
+    <div class="w3-container w3-black">
+      <h5>Tomada en: <%=p.place%></h5>
+      <p>Descripcion: <%=p.description%></p>
+    </div>
+    <br>
+  <%end%>
+</div>
+
+<div class="fixed-action-btn horizontal">
+  <a class="btn-floating btn-large waves-effect waves-light red" href="/publications/new">
+  <i class="glyphicon glyphicon-plus"></i></a>
+</div>

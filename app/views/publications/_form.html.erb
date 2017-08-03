@@ -1,4 +1,16 @@
-<%=form_for @publication ,url: {action: "create"} do |f|%>
+<%= form_with(model: publication, local: true) do |f| %>
+  <% if publication.errors.any? %>
+    <div id="error_explanation">
+      <h3><%= pluralize(publication.errors.count, "error") %> prohibited this publication from being saved:</h3>
+
+      <ul>
+      <% publication.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   <div class="form-group">
     <%= f.label :name , "Titulo de la foto" %>
     <%= f.text_field :name, placeholder: "Título de la foto", class:"form-control"%>
@@ -16,15 +28,10 @@
 
   <div class="form-group">
     <%= f.label :permission_pub , "Privacidad" %>
-    <select name="publication[permission_pub]" id="publication_permission_pub">
-      <option value="compartido">compartido</option>
-      <option value="publico">publico</option>
-      <option value="privado">privado</option>
-    </select>
+    <%= f.select :permission_pub, Publication.permission_pubs.keys.to_a%>
   </div>
 
-  <div class="form-group">
-    <%=f.submit "Publicar", class:"btn"%>
+   <div class="form-group">
+    <%=f.submit "Guardar", class:"btn"%>
   </div>
-
-<%end%>
+<% end %>

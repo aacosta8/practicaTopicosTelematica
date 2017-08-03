@@ -6,19 +6,20 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-inverse" style="border-radius: 0px">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span>Home Page</a>
-          </div>
+  <header>
+    <nav class="navbar navbar-inverse" style="border-radius: 0px">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span>Home Page</a>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
+  <body>
     <%= yield %>
   </body>
 </html>

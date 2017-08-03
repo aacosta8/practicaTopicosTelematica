@@ -4,10 +4,10 @@ one:
   name: MyString
   description: MyText
   place: MyString
-  permission: 1
+  permission_pub: 1
 
 two:
   name: MyString
   description: MyText
   place: MyString
-  permission: 1
+  permission_pub: 1

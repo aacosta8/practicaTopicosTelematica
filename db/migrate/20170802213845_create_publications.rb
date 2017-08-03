@@ -4,7 +4,7 @@ class CreatePublications < ActiveRecord::Migration[5.1]
       t.string :name
       t.text :description
       t.string :place
-      t.integer :permission, default: 0
+      t.integer :permission_pub, default: 0
 
       t.timestamps
     end
