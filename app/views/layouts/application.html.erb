@@ -8,17 +8,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
   </head>
-
-  <header>
-    <nav class="navbar navbar-inverse" style="border-radius: 0px">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span>Home Page</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
+    <%=render "partials/navbar"%>
   <body>
     <%= yield %>
   </body>
