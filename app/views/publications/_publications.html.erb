@@ -1,0 +1,33 @@
+<div style="width:50%; margin:0 auto;">
+  <% if user_signed_in?%>
+  <h3 class="text-center"> <%=h1tag%> </h3>
+  <br>
+  <%else%>
+    <h3 class="text-center">Publicaciones publicas... Si deseeas ver las publicaciones compartidas inicia sesión</h3>
+    <br>
+  <%end%>
+  <%@publications.each do |p|%>
+    <div class="w3-container w3-red">
+      <h4><%= link_to p.name , p, class:"be-white"%></h4>
+
+      <% if user_signed_in? and editor%>
+      <%= link_to 'Edit', edit_publication_path(p), class:"be-white"%></td>
+      <%= link_to 'Destroy', p, method: :delete, data: { confirm: 'Are you sure?' }, class:"be-white" %></td>
+      <%end%>
+    </div>
+
+    <img src="http://saveabandonedbabies.org/wp-content/uploads/2015/08/default.png" alt="Car" style="width:100%">
+
+    <div class="w3-container w3-black">
+      <h5>Tomada en: <%=p.place%></h5>
+      <p>Descripcion: <%=p.description%></p>
+    </div>
+    <br>
+  <%end%>
+</div>
+<% if user_signed_in?%>
+<div class="fixed-action-btn ">
+  <a class="btn-floating btn-large waves-effect waves-light red" href="/publications/new">
+  <i class="glyphicon glyphicon-plus"></i></a>
+</div>
+<%end%>
