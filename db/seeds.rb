@@ -8,6 +8,6 @@
 
 
 Publication.delete_all
-Publication.create!( id: 1, name: "Foto1", description:"foto de prueba 1", place: "Medelín", permission_pub: 0 )
-Publication.create!( id: 2, name: "Foto2", description:"foto de prueba 2", place: "Medelín", permission_pub: 1 )
-Publication.create!( id: 3, name: "Foto3", description:"foto de prueba 3", place: "Medelín", permission_pub: 2 )
+Publication.create!( id: 1, name: "Foto1", description:"foto de prueba 1", place: "Medelín", permission_pub: 0, user_id:1 )
+Publication.create!( id: 2, name: "Foto2", description:"foto de prueba 2", place: "Medelín", permission_pub: 1, user_id:1 )
+Publication.create!( id: 3, name: "Foto3", description:"foto de prueba 3", place: "Medelín", permission_pub: 2, user_id:1)

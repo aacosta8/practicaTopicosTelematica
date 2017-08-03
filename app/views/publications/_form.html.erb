@@ -17,6 +17,10 @@
   </div>
 
   <div class="form-group">
+    <%= f.label :photo , "Foto" %> <%= f.file_field :photo%>
+  </div>
+
+  <div class="form-group">
     <%= f.label :description , "Descripción" %>
     <%= f.text_field :description, placeholder: "Descripción de la foto", class:"form-control"%>
   </div>
