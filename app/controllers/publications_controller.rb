@@ -24,8 +24,6 @@ class PublicationsController < ApplicationController
 
   # GET /publications/1/edit
   def edit
-    puts "---------------------------------------------------"
-    puts @publication
   end
 
   # POST /publications
