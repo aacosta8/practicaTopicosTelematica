@@ -24,8 +24,8 @@ default: &default
 
 development:
   <<: *default
-  username: alex
-  password: '32205045'
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   database: practicaTopicosTelematica_development
 
   # The specified database role being used to connect to postgres.
@@ -60,7 +60,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  username: alexbd
+  username: <%= ENV['DATABASE_USERNAME'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
   database: practicaTopicosTelematica_test
 
