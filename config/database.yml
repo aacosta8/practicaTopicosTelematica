@@ -84,7 +84,10 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: practicaTopicosTelematica_production
-  username: alexbd
-  password: 32205045
+  adapter: postgresql
+  pool: 5
+  username: <%= Figaro.env.USERNAME_DATA_BASE %>
+  password: <%= Figaro.env.PASSWORD_DATA_BASE %>
+  host: localhost
+  port: 5432
+  database: <%= Figaro.env.NAME_DATA_BASE %>
