@@ -87,4 +87,4 @@ production:
   <<: *default
   database: practicaTopicosTelematica_production
   username: alexbd
-  password: <%= ENV['DATABASE_PASSWORD'] %>
+  password: 32205045
