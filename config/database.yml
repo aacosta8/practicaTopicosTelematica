@@ -90,4 +90,4 @@ production:
   password: <%= Figaro.env.PASSWORD_DATA_BASE %>
   host: localhost
   port: 5432
-  database: practicaTopicosTelematica_production
+  database: practicatopicostelematica_production
