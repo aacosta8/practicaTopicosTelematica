@@ -21,8 +21,35 @@ La aplicación permitirá a los usuarios subir imágenes a la plataforma web en 
   Se probaron los servicios con la aplicación
   Advanced REST Client
 
+  Para subir la aplicación se deben realizar los siguientes pasos:
+
+    `cd /var/www/practicaTopicosTelematica/code`
+
+    `passenger start`
+
+    el comando anterior cargara el archivo Passengerfile.json que tiene establecidas las siguientes configuraciones
+
+          {
+            // Run the app in a production environment. The default value is "development".                                                                     
+            "environment": "production",
+            // Run Passenger on the given port. In this example, we use port 80,                                                                                
+            // the standard HTTP port.                                                                                                                          
+            "port": 3000,
+            // Tell Passenger to daemonize into the background.                                                                                                 
+            "daemonize": true,
+            // Tell Passenger to run the app as the given user. Only has effect                                                                                 
+            // if Passenger was started with root privileges.                                                                                                   
+            "user": "alex"
+          }
+
+  Al correr este comando la alicación quedara corriendo en background por el puerto 3000
+
+  http://10.131.137.238:3000
+
+
+
 * Producción:
-  Se desplego la aplicación en Heroku
+  Se desplegó la aplicación en Heroku
 
   `heroku login` Comando para iniciar sesión
 
@@ -33,6 +60,10 @@ La aplicación permitirá a los usuarios subir imágenes a la plataforma web en 
   `heroku  run rake db:migrate` Crea las migraciones de la base de datos
 
   `heroku open` Abre nuestra app ya desplegada en el navegador
+
+  Para ingresar a la app desplegada en Heroku solo necesitas ingresar al siguiente link:
+
+  https://practicatopicos.herokuapp.com/
 
 
 # 2.Especificaciones técnicas:
@@ -111,6 +142,7 @@ La aplicación permitirá a los usuarios subir imágenes a la plataforma web en 
 
           GET    /publications/:id
 
+
 *Envia el formulario de una publicación y la modifica en la base de datos *
 
           PATCH  /publications/:id
@@ -127,5 +159,3 @@ La aplicación permitirá a los usuarios subir imágenes a la plataforma web en 
 tanto las publicas, compartidas y privadas*
 
           GET    /misfotos
-
-  
