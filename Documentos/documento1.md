@@ -2,7 +2,7 @@
 
 ## 1. ¿Cuál    proyecto 1    tomaron    como    base    y    por    qué?    
 
-Se tomó el proyecto  tópicos telematica del compañero Alex Acosta como aplicación para seguir trabajando, por una votación entre todos los miembros del equipo porque se vio un buen trabajo realizado en su aplicación cumpliendo con lo requerido en el proyecto 1, tenía además otras funcionalidades adicionales para esta entrega,  y un buen diseño que permitía una adecuada escabilidad para los siguientes proyectos de la materia tópicos especiales en telematica.
+Se tomó el proyecto  "Tópicos Telematica" del compañero Alex Acosta como aplicación para seguir trabajando, por una votación entre todos los miembros del equipo porque se vio un buen trabajo realizado en su aplicación cumpliendo con lo requerido en el proyecto 1, tenía además otras funcionalidades adicionales para esta entrega,  y un buen diseño que permitía una adecuada escabilidad para los siguientes proyectos de la materia tópicos especiales en telematica.
 
 ## 2. Descripción    de    la    aplicación:
 
