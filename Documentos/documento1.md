@@ -1,10 +1,10 @@
 # Definición del equipo, proyecto y aplicación.
 
-1. ¿Cuál    proyecto 1    tomaron    como    base    y    por    qué?    
+## 1. ¿Cuál    proyecto 1    tomaron    como    base    y    por    qué?    
 
 Se tomó el proyecto  tópicos telematica del compañero Alex Acosta como aplicación para seguir trabajando, por una votación entre todos los miembros del equipo porque se vio un buen trabajo realizado en su aplicación cumpliendo con lo requerido en el proyecto 1, tenía además otras funcionalidades adicionales para esta entrega,  y un buen diseño que permitía una adecuada escabilidad para los siguientes proyectos de la materia tópicos especiales en telematica.
 
-2. Descripción    de    la    aplicación:
+## 2. Descripción    de    la    aplicación:
 
 La aplicación permitirá a los usuarios subir imágenes a la plataforma web en la cual los usuarios podrán gestionar su contenido, dándole la posibilidad al usuario de nombrar cada una de sus fotos subidas a la aplicación también podrá adjuntar el lugar donde fue tomada, la fecha en que la tomó, las personas con quien está en la foto  y una breve descripción de la imagen; estas imágenes pueden ser vistas dependiendo de la privacidad que el usuario desee suministrar, el usuario puede publicar su foto con tres posibles permisos los cuales son:
 
@@ -16,7 +16,7 @@ La aplicación permitirá a los usuarios subir imágenes a la plataforma web en 
 
   También será posible comentar las imágenes de los demás usuarios(sólo si está registrado en la página), pero estos comentarios solo podrán visualizarse si el propietario de la foto  autoriza que este sea visible.    
 
-3. Requisitos    Funcionales:    
+## 3. Requisitos    Funcionales:    
 
   * RF1: El sistema permitirá registrar a los usuarios.
 
@@ -36,7 +36,7 @@ La aplicación permitirá a los usuarios subir imágenes a la plataforma web en 
 
   * RF9: El usuario podrá filtrar las publicaciones por fecha o por usuario.
 
-4. Asignación    de     QA    /    roles.     
+## 4. Asignación    de     QA    /    roles.     
    * QA1:    Disponibilidad.
      Estudiantes:  
       *  Alexander Acosta.
@@ -46,10 +46,10 @@ La aplicación permitirá a los usuarios subir imágenes a la plataforma web en 
 
    * QA3:     Seguridad                  Estudiante: Ana María Bedoya    
 
-5. [Dir    GitHub    del    Proyecto2](https://github.com/aacosta8/practicaTopicosTelematica)
+## 5. [Dir    GitHub    del    Proyecto2](https://github.com/aacosta8/practicaTopicosTelematica)
 
 
-6. Detalles    técnicos    del    proceso    para    la    incorporación    de    la    Gestión    de    Contenidos    en    el    proyecto2.    
+## 6. Detalles    técnicos    del    proceso    para    la    incorporación    de    la    Gestión    de    Contenidos    en    el    proyecto2.    
 
 Para la gestión de contenido se utilizó la gema Paperclip, la cual facilitó el proceso de guardado tanto del contenido (imágenes) como de los metadatos.
 
