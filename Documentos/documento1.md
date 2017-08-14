@@ -37,10 +37,10 @@ La aplicación permitirá a los usuarios subir imágenes a la plataforma web en 
   * RF9: El usuario podrá filtrar las publicaciones por fecha o por usuario.
 
 4. Asignación    de     QA    /    roles.     
-   * QA1:    Disponibilidad
+   * QA1:    Disponibilidad.
      Estudiantes:  
-      *  Alexander Acosta
-      * Esteban Salazar  
+      *  Alexander Acosta.
+      * Esteban Salazar.
 
    * QA2:     Rendimiento                Estudiante:  Julián Arango López
 
