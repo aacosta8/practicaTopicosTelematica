@@ -59,3 +59,9 @@ Los metadatos que guarda en la bd son los siguientes:
   * photo_content_type
   * photo_file_size
   * photo_updated_at
+
+Esta gema ofrece una gran escalabilidad debido a que no guarda la imágenes en una base de datos, y es sencillo especificar en que directorio se almacenaran los datos, también es posible almacenarlas en un servidores externos tales como:
+ * Amazon
+ * Azure
+ * Dropbox
+ * Otros (servidores propios)
