@@ -38,7 +38,7 @@ La aplicación permitirá a los usuarios subir imágenes a la plataforma web en 
 
 4. Asignación    de     QA    /    roles.     
    * QA1:    Disponibilidad
-    * Estudiantes:  
+     Estudiantes:  
       *  Alexander Acosta
       * Esteban Salazar  
 
