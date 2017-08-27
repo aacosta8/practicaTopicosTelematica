@@ -103,6 +103,16 @@ Para el desarrollo del proyecto se utilizarán las siguientes tácticas de segur
   * Let’s Encrypt.
   * SonarQube.
 
+## Referencias.
+  * Behique Digital. (2017). ¿Por qué la Autenticación Básica de HTTP/1.1 es vulnerable? (+Ejemplo). [online] Available at: https://henryraul.wordpress.com/2016/09/02/la-inseguridad-de-la-autenticacion-basica-de-http1-1-ejemplo/ [Accessed 27 Aug. 2017].
+  * Docs.microsoft.com. (2017). Security patterns. [online] Available at: https://docs.microsoft.com/en-us/azure/architecture/patterns/category/security [Accessed 27 Aug. 2017].
+  * En.wikipedia.org. (2017). Security pattern. [online] Available at: https://en.wikipedia.org/wiki/Security_pattern [Accessed 27 Aug. 2017].
+  * Es.wikipedia.org. (2017). OpenID. [online] Available at: https://es.wikipedia.org/wiki/OpenID [Accessed 27 Aug. 2017].
+  * Letsencrypt.org. (2017). How It Works - Let's Encrypt - Free SSL/TLS Certificates. [online] Available at: https://letsencrypt.org/how-it-works/ [Accessed 27 Aug. 2017].
+  * Lecturas de clase disponibles en EAFIT Interactiva.
+  * Shailesh Kumar Shivakumar. (2014). Architecting High Performing, Scalable and Available Enterprise Web Applications. Morgan Kaufmann Publishers.
+  * Bass, L., Clements, P. and Kazman, R. (2012). Software architecture in practice. Upper Saddle River, NJ: Addison-Wesley.
+
 
 
 
