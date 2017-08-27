@@ -81,7 +81,8 @@ d. Adivinar contraseñas de usuarios del sistema.
 Se implementará una arquitectura Single Sing-On (SSO) para el servicio de autenticación. Este se realizará de manera externa con un proveedor de OpenID cuya estructura puede apreciarse en la siguiente imagen:
 ![](/Documentos/images/openid.png)
 
-Para garantizar la confidencialidad de la aplicación se empleará HTTPS con Let’s Encrypt para obtener un certificado confiable (llave) automáticamente desde el navegador. Para emitir y revocar dichos certificados, Let’s Encrypt utiliza el siguiente esquema:
+Para garantizar la confidencialidad de la aplicación se empleará HTTPS con Let’s Encrypt para obtener un certificado confiable (llave) automáticamente desde el navegador. Let’s Encrypt utiliza el siguiente esquema:
+
 ![](/Documentos/images/https.png)
 
 ## c. Best Practices.
