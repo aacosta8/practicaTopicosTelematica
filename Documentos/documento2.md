@@ -37,7 +37,7 @@ Una estrategia de seguridad integral debe abordar los siguientes aspectos en tod
 
 ## c. Especificación mediante escenarios.
 Para definir y realizar el análisis de este QA se utilizará el siguiente escenario general de seguridad:
-![General](https://github.com/aacosta8/practicaTopicosTelematica/tree/master/Documentos/images/General.png)
+![](https://github.com/aacosta8/practicaTopicosTelematica/tree/master/Documentos/images/General.png)
 
 ## d. Tácticas.
   * Seguridad física
