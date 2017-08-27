@@ -37,8 +37,7 @@ Una estrategia de seguridad integral debe abordar los siguientes aspectos en tod
 
 ## c. Especificación mediante escenarios.
 Para definir y realizar el análisis de este QA se utilizará el siguiente escenario general de seguridad:
-
-(/Documentos/images/General.png)
+![](/Documentos/images/General.png)
 
 
 ## d. Tácticas.
@@ -49,7 +48,7 @@ Para definir y realizar el análisis de este QA se utilizará el siguiente escen
   * Recuperar de los ataques
 
 En la siguiente imagen se hace más específica la descripción de cada una de las tácticas enunciadas anteriormente.
-(/Documentos/images/tactics.png)
+![](/Documentos/images/tactics.png)
 
 ## e. Herramientas.
   * HTTPS: Puede emplearse como mecanismo de autenticación básica. En las aplicaciones web que la utilizan, se pone en marcha cuando el usuario, a través de un user-agent realiza la petición de un recurso protegido. Si el respectivo user-agent es un navegador web, se puede apreciar una ventana emergente que solicita el nombre de usuario y la contraseña.
@@ -63,16 +62,16 @@ En la siguiente imagen se hace más específica la descripción de cada una de l
 ## 2. Análisis mediante escenarios.
 
 a. Inicio de sesión sin estar registrado.
-(/Documentos/images/Escenario1.png)
+![](/Documentos/images/Escenario1.png)
 
 b. Eliminar una imagen sin ser propietario.
-(/Documentos/images/Escenario2.png)
+![](/Documentos/images/Escenario2.png)
 
 c. Subir archivos diferentes a imágenes.
-(/Documentos/images/Escenario3.png)
+![](/Documentos/images/Escenario3.png)
 
 d. Adivinar contraseñas de usuarios del sistema.
-(/Documentos/images/Escenario4.png)
+![](/Documentos/images/Escenario4.png)
 
 ## 3. Diseño: En aplicación y en sistema.
 ## a. Vistas de arquitectura.
@@ -80,10 +79,10 @@ d. Adivinar contraseñas de usuarios del sistema.
 
 ## b. Patrones de arquitectura.
 Se implementará una arquitectura Single Sing-On (SSO) para el servicio de autenticación. Este se realizará de manera externa con un proveedor de OpenID cuya estructura puede apreciarse en la siguiente imagen:
-(/Documentos/images/openid.png)
+![](/Documentos/images/openid.png)
 
 Para garantizar la confidencialidad de la aplicación se empleará HTTPS con Let’s Encrypt para obtener un certificado confiable (llave) automáticamente desde el navegador. Para emitir y revocar dichos certificados, Let’s Encrypt utiliza el siguiente esquema:
-(/Documentos/images/https.png)
+![](/Documentos/images/https.png)
 
 ## c. Best Practices.
 Luego de tener identificados los requerimientos de seguridad de la aplicación, se procedería a realizar un análisis de riesgos y vulnerabilidades para establecer de forma clara cuáles son las amenazas que pueden presentarse en torno a los diferentes datos y servicios de la aplicación. Finalmente, con la información obtenida, se diseñaría un plan o programa estratégico de seguridad.
