@@ -75,7 +75,8 @@ d. Adivinar contraseñas de usuarios del sistema.
 
 ## 3. Diseño: En aplicación y en sistema.
 ## a. Vistas de arquitectura.
-
+Diagrama de secuencia para OpenID:
+![](https://apicrazy.files.wordpress.com/2014/08/openid-connect-sequence-diagram1.png)
 
 ## b. Patrones de arquitectura.
 Se implementará una arquitectura Single Sing-On (SSO) para el servicio de autenticación. Este se realizará de manera externa con un proveedor de OpenID cuya estructura puede apreciarse en la siguiente imagen:
