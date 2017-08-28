@@ -143,8 +143,17 @@ Para el desarrollo del proyecto se utilizarán las siguientes tácticas de segur
 
 ## 2. Análisis: Mediante escenarios y/o propuesta en marco teórico.
 
+a. Se reinicia el servidor inesperadamente.
+
+![](/Documentos/images/EscenarioD1.png)
+
+b. Hearbeat para conocer cuando se cae el servidor.
+
+![](/Documentos/images/EscenarioD2.png)
+
 
 ## 3. Diseño: En Aplicación y en Sistema.
+
 
 ## a. Vistas de arquitectura.
 
