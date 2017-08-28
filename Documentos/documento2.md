@@ -13,10 +13,10 @@ Atributos de calidad seleccionados:
 
 ## 1. Marco de referencia.
 ## a. Definición.
-La seguridad es una medida de la capacidad de un sistema para proteger los datos y la información del acceso no autorizado, a la vez que proporciona acceso a personas y sistemas autorizados. Una acción que se emprende en contra de un sistema informático con la intención de dañarlo se denomina un ataque y puede manifestarse de diferentes formas. Puede tratarse de un intento no autorizado de acceder a datos o servicios o de modificar datos, o puede estar destinado a denegar servicios a usuarios legítimos. 
+La seguridad es una medida de la capacidad de un sistema para proteger los datos y la información del acceso no autorizado, a la vez que proporciona acceso a personas y sistemas autorizados. Una acción que se emprende en contra de un sistema informático con la intención de dañarlo se denomina un ataque y puede manifestarse de diferentes formas. Puede tratarse de un intento no autorizado de acceder a datos o servicios o de modificar datos, o puede estar destinado a denegar servicios a usuarios legítimos.
 
 Una estrategia de seguridad integral debe abordar los siguientes aspectos en todas las capas:
-1) Confidencialidad: Los datos no deben ser revelados a usuarios no autorizados. Por ejemplo, un hacker no debería poder acceder a la información personal de las personas en un programa gubernamental. 
+1) Confidencialidad: Los datos no deben ser revelados a usuarios no autorizados. Por ejemplo, un hacker no debería poder acceder a la información personal de las personas en un programa gubernamental.
 
 2) Integridad: Los datos o servicios no están sujetos a manipulación no autorizada. Por ejemplo, la nota definitiva de un alumno no debe ser cambiada tiempo después por otro profesor o persona diferente a quien se la asignó.
 
@@ -110,25 +110,25 @@ Para el desarrollo del proyecto se utilizarán las siguientes tácticas de segur
   Disponibilidad es aquella que está allí y realiza una tarea cuando es necesario. Esta es una perspectiva amplia y tiene como objetivo la fiabilidad, como también puede centrarse en algunas cosas adicionales como es la inactividad cuando se tiene un mantenimiento periódico. La disponibilidad se basa en el concepto de fiabilidad añadiendo la noción de recuperación, es decir cuando el sistema tiene una caída de servicio, se restablece por sus medios, esta se puede realizar por diferentes medios.
   La disponibilidad es la capacidad de un sistema para reparar o cubrir fallos de tal manera que el periodo acumulativo de interrupción del servicio no exceda un valor requerido durante un intervalo de tiempo especificado. También se consideran conceptos de confiabilidad, confidencialidad, integridad y cualquier otro atributo de calidad que implique un concepto de fracaso inaceptable.
   Principalmente la disponibilidad consiste en minimizar el tiempo de interrupción del servicio al mitigar fallas. El fallo implica visibilidad a un sistema o un humano que esté pendiente del servicio.
-  
-## b. ¿Qué patrones se pueden emplear? 
+
+## b. ¿Qué patrones se pueden emplear?
   * Failover
   * Failback
-  * Replicación 
+  * Replicación
   * Redundancia
   * Virtualización
-  * Mantenimiento 
-    * Mantenimiento correctivo 
-    * Mantenimiento preventivo 
+  * Mantenimiento
+    * Mantenimiento correctivo
+    * Mantenimiento preventivo
     * Mantenimiento perfectivo
 
 ## c. Especificación mediante escenarios
   ![](/Documentos/images/disponibilidadEscenario.png)
 
-## d. ¿Qué tácticas se pueden emplear? 
-  * Detección de fallos 
+## d. ¿Qué tácticas se pueden emplear?
+  * Detección de fallos
   * Recuperarse de fallas
-  * Prevenir fallas 
+  * Prevenir fallas
 
   En la siguiente imagen se hace más específica la descripción de cada una de las tácticas enunciadas anteriormente.
 
@@ -143,25 +143,33 @@ Para el desarrollo del proyecto se utilizarán las siguientes tácticas de segur
 
 ## 2. Análisis: Mediante escenarios y/o propuesta en marco teórico.
 
+a. Se reinicia el servidor inesperadamente.
 
-## 3. Diseño: En Aplicación y en Sistema. 
- 
+![](/Documentos/images/EscenarioD1.png)
+
+b. Hearbeat para conocer cuando se cae el servidor.
+
+![](/Documentos/images/EscenarioD2.png)
+
+
+## 3. Diseño: En Aplicación y en Sistema.
+
 ## a. Vistas de arquitectura.
 
 ## b. Patrones de arquitectura.
   * Failover: Se va a implementar para los balanceadores entre los clientes( browsers) y los servidores, implementado uno primario y secundario.
-  * Failback: Este se implementara para regresar el sistema que presenta fallas a la normalidad 
+  * Failback: Este se implementara para regresar el sistema que presenta fallas a la normalidad
   * Replicación de los datos.
   * Redundancia: Se implementa con los servidores, file servers, balanceadores, base de datos y conexiones, para una mayor disponibilidad.
   * Virtualización de los datos almacenados.
   * Mantenimiento preventivo para evitar una posible falla en el sistema
 
 ## c. Best Practices.
-  * Hardware related best practices: 
+  * Hardware related best practices:
     * Infraestructura de monitoreo y alerta proactiva
     * Redundancia en hardware
     * Recuperación de desastres
-  * Software related best practices: 
+  * Software related best practices:
     * Arquitectura simple
     * Diseño de componentes de software modulares
     * Estrategia de almacenamiento en caché
@@ -170,9 +178,9 @@ Para el desarrollo del proyecto se utilizarán las siguientes tácticas de segur
 ## d. Tácticas.
   Para el desarrollo del proyecto se utilizarán las siguientes tácticas de disponibilidad:
 
-  * Detección de fallos 
+  * Detección de fallos
   * Recuperarse de fallas
-  * Prevenir fallas 
+  * Prevenir fallas
 
 ## e. Herramientas.
   * Enlaces redundantes
@@ -191,10 +199,3 @@ Para el desarrollo del proyecto se utilizarán las siguientes tácticas de segur
   * Lecturas de clase disponibles en EAFIT Interactiva.
   * Shailesh Kumar Shivakumar. (2014). Architecting High Performing, Scalable and Available Enterprise Web Applications. Morgan Kaufmann Publishers.
   * Bass, L., Clements, P. and Kazman, R. (2012). Software architecture in practice. Upper Saddle River, NJ: Addison-Wesley.
-
-
-
-
-
-
-
