@@ -104,6 +104,84 @@ Para el desarrollo del proyecto se utilizarán las siguientes tácticas de segur
   * Let’s Encrypt.
   * SonarQube.
 
+## Disponibilidad
+
+## a. ¿Qué es?
+  Disponibilidad es aquella que está allí y realiza una tarea cuando es necesario. Esta es una perspectiva amplia y tiene como objetivo la fiabilidad, como también puede centrarse en algunas cosas adicionales como es la inactividad cuando se tiene un mantenimiento periódico. La disponibilidad se basa en el concepto de fiabilidad añadiendo la noción de recuperación, es decir cuando el sistema tiene una caída de servicio, se restablece por sus medios, esta se puede realizar por diferentes medios.
+  La disponibilidad es la capacidad de un sistema para reparar o cubrir fallos de tal manera que el periodo acumulativo de interrupción del servicio no exceda un valor requerido durante un intervalo de tiempo especificado. También se consideran conceptos de confiabilidad, confidencialidad, integridad y cualquier otro atributo de calidad que implique un concepto de fracaso inaceptable.
+  Principalmente la disponibilidad consiste en minimizar el tiempo de interrupción del servicio al mitigar fallas. El fallo implica visibilidad a un sistema o un humano que esté pendiente del servicio.
+  
+## b. ¿Qué patrones se pueden emplear? 
+  * Failover
+  * Failback
+  * Replicación 
+  * Redundancia
+  * Virtualización
+  * Mantenimiento 
+    * Mantenimiento correctivo 
+    * Mantenimiento preventivo 
+    * Mantenimiento perfectivo
+
+## c. Especificación mediante escenarios
+  ![](/Documentos/images/disponibilidadEscenario.png)
+
+## d. ¿Qué tácticas se pueden emplear? 
+  * Detección de fallos 
+  * Recuperarse de fallas
+  * Prevenir fallas 
+
+  En la siguiente imagen se hace más específica la descripción de cada una de las tácticas enunciadas anteriormente.
+
+  ![](/Documentos/images/tacticasdisponibilidad.png)
+
+## e. Qué	herramientas se pueden utilizar para lograrlo
+  * Enlaces redundantes
+  * Monitoreo de la red
+  * Failover Features
+  * Detección de fallos a nivel de red, auto-recuperación y Graceful Restart (GR) o Non Stop Forwarding (NSF) (reinicio)
+  * Disponibilidad de almacenamiento se puede lograr mediante RAID, virtualización de almacenamiento y dispositivos NAS / SAN
+
+## 2. Análisis: Mediante escenarios y/o propuesta en marco teórico.
+
+
+## 3. Diseño: En Aplicación y en Sistema. 
+ 
+## a. Vistas de arquitectura.
+
+## b. Patrones de arquitectura.
+  * Failover: Se va a implementar para los balanceadores entre los clientes( browsers) y los servidores, implementado uno primario y secundario.
+  * Failback: Este se implementara para regresar el sistema que presenta fallas a la normalidad 
+  * Replicación de los datos.
+  * Redundancia: Se implementa con los servidores, file servers, balanceadores, base de datos y conexiones, para una mayor disponibilidad.
+  * Virtualización de los datos almacenados.
+  * Mantenimiento preventivo para evitar una posible falla en el sistema
+
+## c. Best Practices.
+  * Hardware related best practices: 
+    * Infraestructura de monitoreo y alerta proactiva
+    * Redundancia en hardware
+    * Recuperación de desastres
+  * Software related best practices: 
+    * Arquitectura simple
+    * Diseño de componentes de software modulares
+    * Estrategia de almacenamiento en caché
+    * Automatización para actividades de mantenimiento
+
+## d. Tácticas.
+  Para el desarrollo del proyecto se utilizarán las siguientes tácticas de disponibilidad:
+
+  * Detección de fallos 
+  * Recuperarse de fallas
+  * Prevenir fallas 
+
+## e. Herramientas.
+  * Enlaces redundantes
+  * Failover Features
+  * Detección de fallos a nivel de red, auto-recuperación y Graceful Restart o Non Stop Forwarding
+  * Disponibilidad de almacenamiento
+
+
+
 ## Referencias.
   * Behique Digital. (2017). ¿Por qué la Autenticación Básica de HTTP/1.1 es vulnerable? (+Ejemplo). [online] Available at: https://henryraul.wordpress.com/2016/09/02/la-inseguridad-de-la-autenticacion-basica-de-http1-1-ejemplo/ [Accessed 27 Aug. 2017].
   * Docs.microsoft.com. (2017). Security patterns. [online] Available at: https://docs.microsoft.com/en-us/azure/architecture/patterns/category/security [Accessed 27 Aug. 2017].
