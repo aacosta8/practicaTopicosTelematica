@@ -192,8 +192,6 @@ b. Hearbeat para conocer cuando se cae el servidor.
 
 ## Rendimiento
 
-1.  Rendimiento:
-
   En resumen se habla de tiempo, es la capacidad que tiene el sistema para cumplir con los requisitos de tiempo. El sistema o algún elemento de este debe responder a tiempo cuando se presenta un evento. Se trata de determinar los eventos que pueden ocurrir, cuando ocurren y la respuesta del sistema a esos eventos, basada en tiempo es la esencia del rendimiento del sistema.
 
   Los eventos de un sistema basado en la web se presentan en forma de peticiones de los usuarios, desde clientes como navegadores web y otras aplicaciones que consumen los servicios. La respuesta esperada a esta discusión sería mostrada como el número de transacciones que pueden ser recibidas y procesadas en un determinado período de tiempo.
