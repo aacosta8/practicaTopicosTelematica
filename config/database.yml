@@ -88,6 +88,6 @@ production:
   pool: 5
   username: <%= Figaro.env.USERNAME_DATA_BASE %>
   password: <%= Figaro.env.PASSWORD_DATA_BASE %>
-  host: localhost
+  host: 10.131.137.222
   port: 5432
   database: practicatopicostelematica_production
