@@ -27,3 +27,7 @@ public/system
 
 # Ignore application configuration
 /config/application.yml
+Passengerfile.json
+passenger.3000.pid.lock
+public/assets/
+vendor/bundle/
