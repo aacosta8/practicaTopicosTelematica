@@ -31,7 +31,8 @@ gem 'jquery-rails'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'omniauth', '~> 1.6', '>= 1.6.1'
+gem 'omniauth-google-oauth2', '~> 0.5.2'
 #Added by aacosta8
 
 gem 'bootstrap-sass', '~> 3.3.6'

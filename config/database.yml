@@ -86,8 +86,8 @@ test:
 production:
   adapter: postgresql
   pool: 5
-  username: <%= Figaro.env.USERNAME_DATA_BASE %>
-  password: <%= Figaro.env.PASSWORD_DATA_BASE %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   host: localhost
   port: 5432
   database: practicatopicostelematica_production
