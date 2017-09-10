@@ -78,10 +78,19 @@ class PublicationsController < ApplicationController
     @publications = current_user.publications.recientes
   end
 
+  def find_by_name
+    @publication = Publication.find_by(name: set_publication_name)
+    redirect_to @publication
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_publication
       @publication = Publication.find(params[:id])
+    end
+
+    def set_publication_name
+      params[:name]
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
