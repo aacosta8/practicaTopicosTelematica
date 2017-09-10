@@ -28,8 +28,8 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = true
-  config.cache_classes = false
+  config.assets.compile = false
+  config.cache_classes = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
