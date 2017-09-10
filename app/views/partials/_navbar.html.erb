@@ -8,6 +8,13 @@
         <%end%>
       </div>
 
+      <%= form_tag("/publications/buscar", method: "post", class:"navbar-form navbar-right") do %>
+        <div class="form-group">
+          <%= text_field_tag(:name) %>
+        </div>
+        <%= submit_tag("Buscar", class:"btn red") %>
+      <% end %>
+
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in?%>
           <li><%= link_to  destroy_user_session_path, method: :delete do %>
