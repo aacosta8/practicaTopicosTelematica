@@ -36,7 +36,7 @@ class PublicationsController < ApplicationController
     if user_signed_in?
       @publication = current_user.publications.new(publication_params)
     else
-      @user = User.last
+      @user = User.new
       @publication = @user.publications.new(publication_params)
     end
     respond_to do |format|
