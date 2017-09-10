@@ -79,8 +79,13 @@ class PublicationsController < ApplicationController
   end
 
   def find_by_name
+    @publication = nil
     @publication = Publication.find_by(name: set_publication_name)
-    redirect_to @publication
+    if @publication
+      redirect_to @publication
+    else
+      redirect_to publications_path
+    end
   end
 
   private
