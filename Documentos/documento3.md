@@ -7,21 +7,20 @@
   * Ana Maria Bedoya.
   * Esteban Salazar.
 
-
 2. Diseño	de	arquitectura	de	la	Aplicación	y	Sistema
   *  Vista	de	desarrollo
       * Definición	de	Tecnología	de	Desarrollo:
+      ![Tech](/Documentos/images/devTech.png)
 
-      * URLs	de	repositorio	(github)
       *  Vista	de	despliegue:
-
         Diagrama UML en donde se relacionan las máquinas empleadas con sus respectivas IPs:
 
       ![](/Documentos/images/uml.jpeg)
       * Tecnología:
+          * Software Base:
+          ![Software Base](/Documentos/images/baseSoft.png)
+          * Redes: infraestructura proveída por el datacenter de la Universidad EAFIT.
 
-          * Servidores con SO CentOs...
-          * Base,	Redes,	etc.
-
-
-          *  URL	de	ejecución	(http://10.131.137.x)		
+      *  URL	de	ejecución
+      		  * [Pública](http://proyecto16.dis.eafit.edu.co/)
+            * Privada: 10.131.137.156
