@@ -90,10 +90,11 @@
 
 * Seguridad
   * Herramientas utilizadas:
+  
   Haproxy: Se empleó para el manejo de tráfico, esperando cumplir con los requisitos de disponibilidad. Su implementación fue fundamental para desarrollar la parte de confidencialidad (HTTP y HTTPS). En este caso se configuró en la máquina 200.12.180.86 el archivo /etc/haproxy/haproxy.cfg para especificar HTTP o HTTPS, y desde allí se redirigió al Load Balancer el cual dirige a las dos aplicaciones desplegadas.
 
   Let’s Encrypt: Herramienta utilizada para obtener el certificado, y luego adicionar los dominios que pertenecían al certificado correspondiente, en este caso el dominio asignado fue proyecto16.dis.eafit.edu.co.
 
   omniauth-google-oauth2: Con esta gema fue posible establecer una conexión con el API de Google para realizar la autenticación con este proveedor externo.
 
-  
+
