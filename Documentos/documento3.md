@@ -30,10 +30,26 @@
 
 3. Implementación	y	Pruebas	por	Atributo	de	Calidad:
 
-  *  Implementación:
-    *  Herramientas	utilizadas:
+    * DISPONIBILIDAD
+      *  Herramientas	utilizadas:
+        * HAPROXY
+        * NFS
+        * HTTPD
+        * POSTGRES MASTER-SLAVE
 
     * Cambios	en	la	implementación	de	la	aplicación:
+
+      * CONFIGURACION BASE DE DATOS EN PRODUCCIÓN (database.yml) APUNTANDO A EL SERVIDOR https://www.howtoforge.com/tutorial/postgresql-replication-on-ubuntu-15-04/
+      * LOAD BALANCER SUBIMOS LA APLICACION EN DOS SERVIDORES, LOS CUALES LO APUNTA EL LOAD BALANCER ENCARGANDOSE DE DISTRIBUIR LAS CARGAS ENTRE ESTOS DOS Y SI ALGUNO ESTA CAIDO EL SERVICIO SIGUE EN NORMAL FUNCIONAMIENTO CON EL OTRO SERVIDOR.
+      * NFS SE IMPLEMENTO PARA EL ALMACENAMIENTO DE FOTOS EN LOS SERVIDORES 10.131.137.222 Y 10.131.137.226
+      * EN POSTGRES SE IMPLEMENTO EL SISTEMA MASTER - SLAVE PARA SINCRONIZAR LOS DOS SERVIDORES Y BRINDAR UNA MEJOR DISPONIBILIDAD DEL SERVICIO.
+
+* Esquemas	de	pruebas	para	comprobar	el	Atributo	de	Calidad.
+
+    * DISPONIBILIDAD
+      * Si se presenta la caida en uno de los servidores de aplicación, el load balancer nos permite seguir en funcionamiento la aplicación debido a el balnceo de cargar que realiza.
+      * igualmente si se presentan caidas en la base de datos o en archivos, se tiene un respaldo el cual permitira que la aplicación funcione normalmente para el usuario mostrandole toda su información.
+
 
   * Esquemas	de	pruebas	para	comprobar	el	Atributo	de	Calidad.
 
