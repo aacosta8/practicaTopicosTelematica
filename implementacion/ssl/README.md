@@ -11,7 +11,7 @@
 
 Ambos se concatenan y se almacenan en la carpeta /etc/haproxy/certs/proyecto16.pem con el siguiente comando:
 
-	 	$ sudo cat /etc/letsencrypt/live/st0263.dis.eafit.edu.co/fullchain.pem /etc/letsencrypt/live/st0263.dis.eafit.edu.co/privkey.pem > /etc/haproxy/certs/proyecto16.pem
+	 $ sudo cat /etc/letsencrypt/live/st0263.dis.eafit.edu.co/fullchain.pem /etc/letsencrypt/live/st0263.dis.eafit.edu.co/privkey.pem > /etc/haproxy/certs/proyecto16.pem
 
 3) Luego se configura el archivo haproxy.cfg localizado en /etc/haproxy/
 	
@@ -53,5 +53,5 @@ Ambos se concatenan y se almacenan en la carpeta /etc/haproxy/certs/proyecto16.p
 
 Y en caso de tener la VPN encendida, se apaga y se prueba la aplicación en un browser digitando las direcciones:
 
-		http://proyecto16.dis.eafit.edu.co
-		https://proyecto16.dis.eafit.edu.co
+	http://proyecto16.dis.eafit.edu.co
+	https://proyecto16.dis.eafit.edu.co
