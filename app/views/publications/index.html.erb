@@ -1,1 +1,20 @@
-<%= render 'publications', h1tag: "Publicaciones compartidas", editor: false %>
+<div style="width:50%; margin:0 auto;">
+  <% if user_signed_in?%>
+  <h3 class="text-center"> <%=h1tag%> </h3>
+  <br>
+  <%else%>
+    <h3 class="text-center">Publicaciones publicas... Para ver las publicaciones
+        compartidas debes iniciar sesión</h3>
+    <br>
+  <%end%>
+
+  <%= render partial: 'publication', collection: @publications,
+    h1tag: "Publicaciones compartidas", editor: false, cached:true%>
+</div>
+
+<!-- if user_signed_in? -->
+<div class="fixed-action-btn ">
+  <a class="btn-floating btn-large waves-effect waves-light red" href="/publications/new">
+  <i class="glyphicon glyphicon-plus"></i></a>
+</div>
+<!-- end -->
