@@ -2,9 +2,10 @@
 # IP: 200.12.180.86
 
 1) En primer lugar se debía añadir el dominio dado al certificado existente previamente.
+
 		$ sudo systemctl stop haproxy
-	$ sudo /root/certbot-auto certonly --cert-path /etc/letsencrypt/archive/st0263.dis.eafit.edu.co --expand -d proyecto16.dis.eafit.edu.co
-	$ sudo /root/certbot-auto certonly -d st0263.dis.eafit.edu.co  --expand -d proyecto16.dis.eafit.edu.co
+		$ sudo /root/certbot-auto certonly --cert-path /etc/letsencrypt/archive/st0263.dis.eafit.edu.co --expand -d proyecto16.dis.eafit.edu.co
+		$ sudo /root/certbot-auto certonly -d st0263.dis.eafit.edu.co  --expand -d proyecto16.dis.eafit.edu.co
 
 2) Como resultado de los pasos anteriores se derivan dos archivos:
 	*fullchain.pem
