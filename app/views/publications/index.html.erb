@@ -1,6 +1,6 @@
 <div style="width:50%; margin:0 auto;">
   <% if user_signed_in?%>
-  <h3 class="text-center"> <%=h1tag%> </h3>
+  <h3 class="text-center"></h3>
   <br>
   <%else%>
     <h3 class="text-center">Publicaciones publicas... Para ver las publicaciones
@@ -8,8 +8,8 @@
     <br>
   <%end%>
 
-  <%= render partial: 'publication', collection: @publications,
-    h1tag: "Publicaciones compartidas", editor: false, cached:true%>
+  <%= render partial: 'publication', collection: @publications,editor: false, cached:true%>
+
 </div>
 
 <!-- if user_signed_in? -->
