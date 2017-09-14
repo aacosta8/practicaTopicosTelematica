@@ -83,6 +83,12 @@
 
   * Esquemas	de	pruebas: en la carpeta /jmeter se agreron los siguientes archivos de prueba:
 
+    * Para poder realizar los test se agregó
+  controlador que se estaba probando la siguiente linea
+  para omitir la verificación de la sesión y el authenticity token y de esta manera poder realizar peticiones.
+
+        [protect_from_forgery with: :null_session]
+
 	+ Upload.jmx: post de imagenes a /publications
 	+ download.jmx: consulta de todas las imagenes.
 	+ search.jmx: búsqueda de una imagen en específico.
