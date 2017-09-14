@@ -1,1 +1,1 @@
-<%= render 'publications', h1tag: "Mis publicaciones", editor: true %>
+<%= render partial: 'publication', collection: current_user.publications.recientes,editor: false, cached:true%>
